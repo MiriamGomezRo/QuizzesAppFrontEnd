@@ -1,0 +1,29 @@
+<md-card>
+<md-card-title>
+  Teacher information
+  </md-card-title>
+  <md-card-content>
+    <form>
+      <md-form-field>
+        <input  [(ngModel)]="teacher.name" name="name" mdInput placeholder="teacher name"  >
+      </md-form-field><br>
+
+      <md-form-field>
+        <input  [(ngModel)]="teacher.address" name="address" mdInput placeholder="teacher Address"  >
+      </md-form-field><br>
+
+      <md-form-field>
+        <input  [(ngModel)]="teacher.age" name="age" mdInput placeholder="teacher age"  >
+      </md-form-field><br>
+
+      <md-form-field>
+        <input  [(ngModel)]="teacher.proffession" name="proffession" mdInput placeholder="teacher proffession"  >
+      </md-form-field><br>
+
+    </form>
+  </md-card-content>
+
+  <md-card-actions>
+    <button (click) ="api.postTeacher(teacher)" md-button>Post</button>
+  </md-card-actions>
+</md-card>
